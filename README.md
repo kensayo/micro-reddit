@@ -43,29 +43,27 @@ To get a local copy up and running follow these simple example steps.
 
 - You can create rows using Active Record in the`Ruby Console`
 - First let's create a couple of users, _the Active Record validate the length of the user (min 5), that email have an `@` and belongs to a domain, also the password require at least 1 uppercase character, 1 lowercase character, 1 special character and 1 digit. All the fields are required_
-  
-    
-    User.create username:'Rafael', email:'rafael@gmail.com', pwd:'RAfa123**' 
 
-    User.create username:'Viviana', email:'vivana@mail.com', pwd:'Vivi22*'
+  ```User.create username:'Rafael', email:'rafael@gmail.com', pwd:'RAfa123**'```
   
+  ```User.create username:'Viviana', email:'viviana@mail.com', pwd:'Vivi22*'```
+
+
 - Now we can create a post, _the Active Record validate the length of the title (min 8 max 50), also the link must be a valid link (i.e. www.microvere.org, https://www.google.com, github.com)_
 
 
-    User.first.posts.create title:'Welcome to Microverse', link:'www.microverse.org'
-
-    User.last.posts.create title:'Search engine', link:'www.google.com'
+    ```User.first.posts.create title:'Welcome to Microverse', link:'www.microverse.org'```
+    
+    ```User.last.posts.create title:'Search engine', link:'www.google.com'```
 
 - Finally we add comments in our posts with the next command, a comment to the first post from our first user
 
 
-    Post.first.comments.new comment:'Awesome page, thanks', user_id:1
-  
-    Post.last.comments.new comment:'Is not the best site, but thanks', user_id:2
-  
-    Post.last.comments.new comment:'Awesome page, thanks', user_id:1
-
-
+    ```Post.first.comments.new comment:'Awesome page, thanks', user_id:1```
+    
+    ```Post.last.comments.new comment:'Is not the best site, but thanks', user_id:2```
+    
+    ```Post.last.comments.new comment:'Awesome page, thanks', user_id:1```
 
 
 
