@@ -12,6 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+# rubocop:disable Metrics/BlockLength
 ActiveRecord::Schema.define(version: 20_210_610_020_200) do
   create_table 'comments', force: :cascade do |t|
     t.string 'comment', null: false
@@ -24,6 +25,7 @@ ActiveRecord::Schema.define(version: 20_210_610_020_200) do
     t.index ['post_id'], name: 'index_comments_on_post_id'
     t.index ['user_id'], name: 'index_comments_on_user_id'
   end
+  # rubocop:enable Metrics/BlockLength
 
   create_table 'posts', force: :cascade do |t|
     t.string 'title', null: false
