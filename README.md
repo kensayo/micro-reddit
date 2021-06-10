@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Micro Reddit Database
+# Micro Reddit Database ![](https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white) ![](https://img.shields.io/badge/Ruby_on_Rails-CC0000?style=for-the-badge&logo=ruby-on-rails&logoColor=white)
 
 >This database is a project developed as part of the Microverse curriculum, to be more specific, is part of the Ruby on Rails module.
 It consists in a database created for a Micro Reddit app, no front end implement at this point, only the database models
@@ -11,7 +11,7 @@ It consists in a database created for a Micro Reddit app, no front end implement
 
 
 
-### Built using
+### 👷🏻 Built using
     - Ruby
     - Ruby On Rails
     - Rubocop
@@ -23,14 +23,14 @@ It consists in a database created for a Micro Reddit app, no front end implement
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### ✅ Prerequisites
 
 * Make sure that **Ruby Environment** is installed in your computer (try to run _ruby_ from your prompt), if not you can install it from [here.](https://www.ruby-lang.org/en/downloads/)
 
 * [Download](https://github.com/kensayo/micro-reddit/archive/refs/heads/development.zip) and unzip **or** [clone this repository](https://docs.github.com/es/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 
 
-### Setup
+### 👨🏻‍🔧 Setup
 
 - Open your terminal and move to the root of the project, using ```cd``` command.
 - Then you must run ```$ rails db:migrate```, so you can work locally with the database.
@@ -39,7 +39,7 @@ To get a local copy up and running follow these simple example steps.
 - Start server using ```$ rails s```
 - Finally go to the Ruby console with `$ rails c`
 
-### Usage
+### 🔌 Usage
 
 - You can create rows using Active Record in the`Ruby Console`
 - First let's create a couple of users, _the Active Record validate the length of the user (min 5), that email have an `@` and belongs to a domain, also the password require at least 1 uppercase character, 1 lowercase character, 1 special character and 1 digit. All the fields are required_
@@ -69,15 +69,15 @@ To get a local copy up and running follow these simple example steps.
 
 
 
-## 👤 Kenny Ortega
+## 💯 Author
+>### 👨🏻‍💻 **Kenny Ortega**
+>- GitHub: [kensayo](https://github.com/kensayo)
+>- Twitter: [@kensayo](https://twitter.com/kensayo)
+>- LinkedIn: [LinkedIn](https://www.linkedin.com/in/kenny-ortega-3580aa33/)
 
-- GitHub: [kensayo](https://github.com/kensayo)
-- Twitter: [@kensayo](https://twitter.com/kensayo)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/kenny-ortega-3580aa33/)
 
 
-
-### Contributions and issues are welcome!
+### 🆘 Contributions and issues are welcome!
 
 License
 This project is MIT licensed.
