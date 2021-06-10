@@ -12,11 +12,10 @@
 #  updated_at :datetime         not null
 #
 class User < ApplicationRecord
-
   has_many :posts
   has_many :comments
   # Validates
-  validates :username, presence: true, uniqueness: true, length: { minimum: 5}
+  validates :username, presence: true, uniqueness: true, length: { minimum: 5 }
   validates :pwd, presence: true, length: { in: 8..12 }, format: {
     with: /(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*\W)/,
     message: 'Password must be safe'
