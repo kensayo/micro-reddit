@@ -1,24 +1,56 @@
-# README
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Micro Reddit Database
 
-Things you may want to cover:
+## This database is a project developed as part of the Microverse curriculum, to be more specific, is part of the Ruby on Rails module.
 
-* Ruby version
+#### It consists in a database created for a Micro Reddit app, no front end implement at this point, only the database models
 
-* System dependencies
+### Relational Model
 
-* Configuration
+![Database Model](./database_model.png)
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
+### Built using
+    - Ruby
+    - Ruby On Rails
+    - Rubocop
+    - SQLite3
+    - Github
+    - RubyMine
 
-* Services (job queues, cache servers, search engines, etc.)
+## Getting Started
 
-* Deployment instructions
+To get a local copy up and running follow these simple example steps.
 
-* ...
+### Prerequisites
+
+* Make sure that **Ruby Environment** is installed in your computer (try to run _ruby_ from your prompt), if not you can install it from [here.](https://www.ruby-lang.org/en/downloads/)
+
+* [Download](https://github.com/kensayo/micro-reddit/archive/refs/heads/development.zip) and unzip **or** [clone this repository](https://docs.github.com/es/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+
+
+### Setup
+
+- Open your terminal and move to the root of the project, using ```cd``` command.
+- Then you must run ```$ rails db:migrate```, so you can work locally with the database.
+- You must run ```$ bundle install```  
+- Start server using ```$ rails s```
+
+### Usage
+
+- You can create rows using Active Record in the`Ruby Console`
+
+## 👤 Kenny Ortega
+
+- GitHub: [kensayo](https://github.com/kensayo)
+- Twitter: [@kensayo](https://twitter.com/kensayo)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/kenny-ortega-3580aa33/)
+
+
+
+### Contributions and issues are welcome!
+
+License
+This project is MIT licensed.
