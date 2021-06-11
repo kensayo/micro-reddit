@@ -46,7 +46,7 @@ To get a local copy up and running follow these simple example steps.
 
   ```User.create username:'Rafael', email:'rafael@gmail.com', pwd:'RAfa123**'```
   
-  ```User.create username:'Viviana', email:'viviana@mail.com', pwd:'Vivi22*'```
+  ```User.create username:'Viviana', email:'viviana@mail.com', pwd:'Vivi22**'```
 
 
 - Now we can create a post, _the Active Record validate the length of the title (min 8 max 50), also the link must be a valid link (i.e. www.microvere.org, https://www.google.com, github.com)_
@@ -59,12 +59,22 @@ To get a local copy up and running follow these simple example steps.
 - Finally we add comments in our posts with the next command, a comment to the first post from our first user
 
 
-    ```Post.first.comments.new comment:'Awesome page, thanks', user_id:1```
+    ```Post.first.comments.create comment:'Awesome page, thanks', user_id:1```
     
-    ```Post.last.comments.new comment:'Is not the best site, but thanks', user_id:2```
+    ```Post.last.comments.create comment:'Is not the best site, but thanks', user_id:2```
     
-    ```Post.last.comments.new comment:'Awesome page, thanks', user_id:1```
+    ```Post.last.comments.create comment:'Awesome page, thanks', user_id:1```
 
+- To test that everything is working fine you can run
+
+  ```
+Post.all.each do |post|
+  puts "Title: #{post.title} \t\t Post by: #{post.user.username}"
+  post.comments.each do |comment|
+    puts "\n\n #{comment.user.username} > #{comment.comment}"
+  end
+end
+```
 
 
 ## 💯 Author
